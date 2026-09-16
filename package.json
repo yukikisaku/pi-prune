@@ -1,0 +1,40 @@
+{
+  "name": "@yukikisaku/pi-prune",
+  "version": "0.1.0",
+  "description": "Prune tool data and thinking blocks from the current Pi session.",
+  "type": "module",
+  "license": "MIT",
+  "author": "yuki-kisaku",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yukikisaku/pi-prune.git"
+  },
+  "homepage": "https://github.com/yukikisaku/pi-prune#readme",
+  "bugs": {
+    "url": "https://github.com/yukikisaku/pi-prune/issues"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension"
+  ],
+  "files": [
+    "index.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "node --no-warnings ./test/smoke.ts"
+  }
+}
